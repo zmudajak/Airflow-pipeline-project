@@ -33,4 +33,18 @@ Find out your IP at [WhatIsMyIP](https://www.whatismyip.com/) - you are interest
 
 From main VM screen click on 'Set up firewall rule' > Create new rule. From there the most important thing is to provide your IP (source IPv4 ranges) and select TCP port. I chose all but you can choose whatever you want. Remember you will later connect to this port.
 
-### 5. Set up your VM
+### 5. Set up your VM and Configure Airflow
+
+Connect with VM by SSH button in GCP interface.<br>
+Update the files and get necessary libraries (code here).<br>
+Start airflow server (do not close this window). Airflow server password and login are in the terminal window after airflow standalone is started.<br>
+Open another terminal window.<br>
+Browse to your airflow folder and edit airflow.cfg file to change dags folder name (in example 'api_dag'). Save changes.<br>
+Make directory same as you named dags folder (in example 'api_dag').<br>
+Change directory to your dags folder. Make files 'api_etl_dag.py' and 'airflow_etl.py' and copy their contents from repository. Save changes.<br>
+Restart airflow server (ctrl+c > airflow standalone)
+
+### 6. Run pipeline
+
+Log in to your airflow server via VM external IP
+
