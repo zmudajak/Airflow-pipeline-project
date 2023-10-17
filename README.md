@@ -10,7 +10,7 @@ The pipeline is built to connect to API endpoint using python script (filename.p
 
 ## Technologies used
 
-Python(Requests library), Airflow, GCP VM, GCP Storage
+Python, REST API, Airflow, GCP
 
 ## Step-by-step guide:
 
