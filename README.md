@@ -8,6 +8,10 @@ Special thanks to [DarshilParmar](https://www.youtube.com/@DarshilParmar) for hi
 The purpose of this project is to build ETL pipeline using Apache Airflow in Google Cloud Platform environment to provide data for further analysis using BigQuery/LookerStudios. It does this by getting data from [Frankfurter](https://www.frankfurter.app/) a free currency exchange API.
 The pipeline is built to connect to API endpoint using python script (filename.py) and getting currency exchange data from last 90 days which is then migrated to GCP Storage by Apache Airflow run on Google Cloud's Virtual Machine.
 
+## Technologies used
+
+Python(Requests library), Airflow, GCP VM, GCP Storage
+
 ## Step-by-step guide:
 
 ### 1. Make sure you have Google Cloud Platform account
@@ -42,9 +46,11 @@ Open another terminal window.<br>
 Browse to your airflow folder and edit airflow.cfg file to change dags folder name (in example 'api_dag'). Save changes.<br>
 Make directory same as you named dags folder (in example 'api_dag').<br>
 Change directory to your dags folder. Make files 'api_etl_dag.py' and 'airflow_etl.py' and copy their contents from repository. Save changes.<br>
-Restart airflow server (ctrl+c > airflow standalone)
+Restart airflow server. (ctrl+c > airflow standalone)
 
 ### 6. Run pipeline
 
-Log in to your airflow server via VM external IP
-
+Log in to your airflow server via VM external IP in your browser adding ':8080' as local port (for example: 00.000.0.000:8080). <br>
+Your DAG should be visible. Click DAG > Graph > Run (upper left 'play' icon).<br>
+If everything is successfull you should see the file in your GCP bucket.<br>
+Congratulations! Remember to shut down your VM and delete data in your storage bucket to save $$!
