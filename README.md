@@ -29,7 +29,7 @@ Google cloud console > Compute Engine > Virtual Machines.
 You can choose whichever VM you want but this project was made on E2-standard-4.
 
 **Important thing is to enable HTTP/HTTPS traffic.**<br>
-**2nd importan thing is setting access scopes to allow access to all cloud API.**
+**2nd important thing is setting access scopes to allow access to all cloud API.**
 
 ### 4. Set up firewall rule to allow SSH access from your PC.
 
