@@ -54,6 +54,6 @@ Restart airflow server. (ctrl+c > airflow standalone)
 ### 6. Run pipeline
 
 Log in to your airflow server via VM [external IP](airflow-etl-screenshots/GCP-VM-externalIPSSH.JPG) in your browser adding ':8080' as local port (for example: 00.000.0.000:8080). <br>
-Your DAG should be visible. Click DAG > Graph > [Run]((airflow-etl-screenshots/airflow-dag-window.JPG)).<br>
+Your DAG should be visible. Click DAG > Graph > [Run](airflow-etl-screenshots/airflow-dag-window.JPG).<br>
 If everything is successfull you should see the file in your GCP bucket.<br>
 Congratulations! Remember to shut down your VM and delete data in your storage bucket to save $$!
