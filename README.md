@@ -8,7 +8,7 @@ Special thanks to [DarshilParmar](https://www.youtube.com/@DarshilParmar) for hi
 ## Purpose
 
 The purpose of this project is to build ETL pipeline using Apache Airflow in Google Cloud Platform environment to provide data for further analysis using BigQuery/LookerStudios. It does this by getting data from [Frankfurter](https://www.frankfurter.app/) a free currency exchange API. <br>
-The first step of the pipeline is built to connect to API endpoint using python script (filename.py) and getting currency exchange data from last 90 days, extract data I am interested in (in this case EURO/USD exchange rate) which is then migrated to GCP Storage by Apache Airflow ran on Google Cloud's Virtual Machine. <br>
+The first step of the pipeline is built to connect to API endpoint using python script and getting currency exchange data from last 90 days, extract data I am interested in (in this case EURO/USD exchange rate) which is then migrated to GCP Storage by Apache Airflow ran on Google Cloud's Virtual Machine. <br>
 Second step of the pipeline starts with Sensor to check if file was uploaded successfully in previous step and then create temp table, load data to temp, copy data from temp to main file and delete temp data.
 Main table was created by GCP SDK. <br>
 
