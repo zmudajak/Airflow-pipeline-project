@@ -50,7 +50,7 @@ Start airflow server (do not close this window). Airflow server password and log
 Open another terminal window.<br>
 Browse to your airflow folder and edit [airflow.cfg file to change dags folder name](airflow-etl-screenshots/airflow-cfg.JPG) (in example 'api_dag'). Save changes.<br>
 Make directory same as you named dags folder (in example 'api_dag').<br>
-Change directory to your dags folder. Make files 'api_etl_dag.py', 'airflow_etl.py' and  and copy their contents from repository. Remember to insert your project ID in the code. <br>
+Change directory to your dags folder. Make files 'api_etl_dag.py', 'airflow_etl.py' and 'sensor_and_load_to.bq_DAG.py' and copy their contents from repository. Remember to insert your project ID in the code. <br>
 Save changes.<br>
 Restart airflow server. (ctrl+c > airflow standalone)
 
