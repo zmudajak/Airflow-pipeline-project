@@ -56,7 +56,7 @@ Restart airflow server. (ctrl+c > airflow standalone)
 
 ### 6. Create Main table in BigQuery where you will store the data by GCP SDK
 
-Click on cloud shell icon to start terminal window. <br>
+Click on cloud shell icon to start terminal window. Icon is found in upper right corner of the screen near your account icon. <br>
 Run the commands from repository (create_BigQuery_table.py, here). <br>
 
 ### 7. Run pipeline
