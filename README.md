@@ -54,7 +54,7 @@ Change directory to your dags folder. Make files 'api_etl_dag.py', 'airflow_etl.
 Save changes.<br>
 Restart airflow server. (ctrl+c > airflow standalone)
 
-### 6. Create Main table in BigQuery where you will store the data in GCP SDK
+### 6. Create Main table in BigQuery where you will store the data by GCP SDK
 
 Click on cloud shell icon to start terminal window. <br>
 Run the commands from repository (create_BigQuery_table.py, here). <br>
