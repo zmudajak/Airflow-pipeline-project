@@ -14,5 +14,9 @@ cd [your dag folder name]
 sudo nano airflow_etl.py
 sudo nano api_etl_dag.py
 
+#additional packages for sensor and BigQuery processing
+sudo pip install apache-airflow-providers-google
+sudo pip install google-cloud-bigquery
+
 # turn on airflow standalone
 airflow standalone
