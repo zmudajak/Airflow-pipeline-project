@@ -13,6 +13,7 @@ sudo nano airflow.cfg #edit the dag folder name and ctrl+x & save
 cd [your dag folder name]
 sudo nano airflow_etl.py
 sudo nano api_etl_dag.py
+sudo nano sensor_and_load_to_bq_DAG.py
 
 #additional packages for sensor and BigQuery processing
 sudo pip install apache-airflow-providers-google
